@@ -12,6 +12,9 @@ import javafx.stage.Stage;
 
 /**
  * JavaFX App
+ * This class includes the main method, which starts the Java-FX Thread.
+ * We'll get a GUI with a text box, an enter-button and a box as the model view.
+ *
  */
 public class View extends Application {
 
@@ -20,12 +23,16 @@ public class View extends Application {
     public final static String idinfoBox = "infobox";
     
     private final Controller controller = new Controller();
-    
-    
-    
-    
+
+
+    /*
+    * Following Method is the implementation of the start-method
+    * @param stage is any stage
+    */
     @Override
     public void start(Stage stage) {
+
+
         BorderPane borderPane = new BorderPane();
         HBox topBox = new HBox();
         
@@ -64,6 +71,7 @@ public class View extends Application {
     
     
     public static void main(String[] args) {
+
         launch();
     }
 
